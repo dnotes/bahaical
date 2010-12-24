@@ -1,0 +1,157 @@
+/* $Id$ */
+
+/*
+Baha'i Calendar
+*/
+
+/* General */
+div.calendar-calendar div.month-view td {
+  height:126px;
+  line-height: 1.26em;
+}
+div.calendar-calendar div.year-view div.month-view td {
+  height:auto;
+}
+div.calendar-calendar td .inner div,
+div.calendar-calendar td .inner div a,
+div.calendar-calendar td .inner div.calendar div,
+div.calendar-calendar td .inner div.calendar div a {
+  background: transparent;
+  padding:0;
+}
+div.calendar-calendar div.month-view td div.calendar {
+  background: url(bg.png) top left repeat;
+  margin:2px 2px 0 0;
+}
+div.calendar-calendar div.month-view td div.calendar div {
+  margin-left:4px;
+}
+
+div.calendar-calendar div.month-view td div.month.day {
+}
+div.view-id-inc_calendar.view-display-id-block_3 ul.pager {
+  margin-bottom:5px;
+}
+div.view-id-inc_calendar.view-display-id-block_3 div.more-link {
+  text-align:left;
+  float:left;
+}
+a.ical-icon:before {
+  content:"ical: ";
+}
+
+
+/* 
+FULL CALENDAR
+*/
+
+/* text setup */
+div.calendar-calendar td:before {
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  float: left;
+  font-size: 9px;
+  font-style: italic;
+  padding: 1px 5px;
+  text-align: center;
+  width:69%;
+  background: url(bg-top.png) top left repeat;
+}
+div.calendar-calendar td:after{
+  padding: 2px 4px;
+  font-style:italic;
+  color:#cccccc;
+  font-size:9px;
+  vertical-align:top;
+}
+div.calendar-calendar td div.month.day { clear:right; }
+
+/* Holy days */
+td.mar-21, td.apr-21, td.apr-29, td.may-2, td.may-23, td.may-29, td.jul-9, td.oct-20, td.nov-12 {
+  background: url(lg-holyday.png) center center no-repeat;
+}
+td.nov-26, td.nov-28 {
+  background:url(lg-holyday-working.png) center center no-repeat;
+}
+td.mar-21:before { content: "Naw-Rúz (New Year)\ABahá (Splendor)"; }
+td.apr-21:before { content: "First Day of Ridván"; }
+td.apr-29:before { content: "Ninth Day of Ridván"; }
+td.may-2:before { content: "Twelfth Day of Ridván"; }
+td.may-23:before { content: "Declaration of The Báb"; }
+td.may-29:before { content: "Ascension of Bahá'u'lláh"; }
+td.jul-9:before { content: "Martyrdom of The Báb"; }
+td.oct-20:before { content: "Birth of The Báb"; }
+td.nov-12:before { content: "Birth of Bahá'u'lláh"; }
+td.nov-26:before { content: "Day of the Covenant"; }
+td.nov-28:before { content: "Ascension of 'Abdu'l\002011Bahá"; }
+
+/* Feasts */
+td.apr-9:before {content: "Jalál (Glory)";}
+td.apr-28:before {content: "Jamál (Beauty)";}
+td.may-17:before {content: "'Azamat (Grandeur)";}
+td.jun-5:before {content: "Núr (Light)";}
+td.jun-24:before {content: "Rahmat (Mercy)";}
+td.jul-13:before {content: "Kalimát (Words)";}
+td.aug-1:before {content: "Kamál (Perfection)";}
+td.aug-20:before {content: "Asmá' (Names)";}
+td.sep-8:before {content: "'Izzát (Might)";}
+td.sep-27:before {content: "Mashíyyat (Will)";}
+td.oct-16:before {content: "'Ilm (Knowledge)";}
+td.nov-4:before {content: "Qudrat (Power)";}
+td.nov-23:before {content: "Qawl (Speech)";}
+td.dec-12:before {content: "Masá'il (Questions)";}
+td.dec-31:before {content: "Sharaf (Honor)";}
+td.jan-19:before {content: "Sultán (Sovereignty)";}
+td.feb-7:before {content: "Mulk (Dominion)";}
+td.mar-2:before {content: "'Alá' (Loftiness)";}
+
+td.mar-1, td.apr-8, td.apr-27, td.may-16, td.jun-4, td.jun-23,
+td.jul-12, td.jul-31, td.aug-19, td.sep-7, td.sep-26, td.oct-15,
+td.nov-3, td.nov-22, td.dec-11, td.dec-30, td.jan-18, td.feb-6, td.mar-20 {
+  background:url(lg-feast.png) bottom right no-repeat;
+}
+
+/* Ayyam-i-Há */
+td.feb-26:before, td.feb-27:before, td.feb-28:before, td.feb-29:before, td.mar-1:before { content: "Ayyam-i-Há"}
+
+/* Holidays */
+td.sun.jan-15:before, td.sun.jan-16:before, td.sun.jan-17:before, td.sun.jan-18:before,
+td.sun.jan-20:before, td.sun.jan-21:before { content: "World Religion Day"; }
+td.sun.jan-19:before { content: "Sultán (Sovereignty)\AWorld Religion Day"}
+
+td.sun.jun-8:before, td.sun.jun-9:before, td.sun.jun-10:before, td.sun.jun-11:before,
+td.sun.jun-12:before, td.sun.jun-13:before, td.sun.jun-14:before { content: "Race Unity Day"; }
+
+
+/* Exceptions */
+div.calendar-calendar td.mini:before, div.calendar-calendar td.empty:before {content:""; padding:0; border:none;}
+
+
+/*
+MINI CALENDAR
+*/
+
+div.calendar-calendar td.mini { height:34px !important; }
+div.calendar-calendar td.mini div.mini-day-on, div.calendar-calendar td.mini div.mini-day-off { line-height: 34px; text-align:center; }
+div.calendar-calendar td.mini div.mini-day-on a {font-weight:bold; text-decoration:none; background: url(bg.png); padding: 3px 4px; }
+div.calendar-calendar td.mini div.mini-day-on a:hover { text-decoration: underline; }
+div.calendar-calendar td.mini div.mini-day-off a { text-decoration:none; color:grey; }
+
+td.mini.mar-1, td.mini.apr-8, td.mini.apr-27, td.mini.may-16, td.mini.jun-4, td.mini.jun-23,
+td.mini.jul-12, td.mini.jul-31, td.mini.aug-19, td.mini.sep-7, td.mini.sep-26, td.mini.oct-15,
+td.mini.nov-3, td.mini.nov-22, td.mini.dec-11, td.mini.dec-30, td.mini.jan-18, td.mini.feb-6, td.mini.mar-20 {
+  background:url(sm-feast.png) bottom right no-repeat;
+}
+td.mini.mar-21, td.mini.apr-21, td.mini.apr-29, td.mini.may-2, td.mini.may-23, td.mini.may-29, td.mini.jul-9, td.mini.oct-20, td.mini.nov-12 {
+  background: url(sm-holyday.png) center center no-repeat;
+}
+td.mini.nov-26, td.mini.nov-28 {
+  background:url(sm-holyday-working.png) center center no-repeat;
+}
+td.mini.sun.jan-15, td.mini.sun.jan-16, td.mini.sun.jan-17, td.mini.sun.jan-18,
+td.mini.sun.jan-19, td.mini.sun.jan-20, td.mini.sun.jan-21,
+td.mini.sun.jun-8, td.mini.sun.jun-9, td.mini.sun.jun-10, td.mini.sun.jun-11,
+td.mini.sun.jun-12, td.mini.sun.jun-13, td.mini.sun.jun-14
+{
+  background:url(sm-holyday-working.png) center center no-repeat;
+}
